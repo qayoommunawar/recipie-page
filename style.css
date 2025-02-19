@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px 0;
 }
 
 .container img{
@@ -51,11 +52,13 @@ body{
 
 .nutrition ul li{
     border-bottom: 1px solid hsl(30, 18%, 87%);
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.7rem; 
 }
 
 .nutrition ul li:last-of-type{
     border:none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .nutrition ul h3.bullet-point{
@@ -84,7 +87,7 @@ section{
 
 section:last-of-type{
     border:none;
-    padding: none;
+    padding-bottom: 0;
 }
 
 h1{
@@ -107,6 +110,10 @@ h3.bullet-point{
     padding: 0.9rem 20px;
 }
 
+.item-list:last-of-type{
+    padding-bottom: 0px;
+}
+
 .item-list li,
 .item-list ol{
     padding-bottom: .8rem;
@@ -119,6 +126,10 @@ h3.bullet-point{
 
     .container img{
         width: 100%;
+        padding: 0;
+    }
+
+    body{
         padding: 0;
     }
 }
